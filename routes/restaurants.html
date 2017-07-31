@@ -1,0 +1,29 @@
+<div class="jumbotron container-fluid">
+  <div class="container">
+    <h1 class="display-3 text-center">Randomize me!</h1>
+    <p class="lead text-center">Press the button below to find a random restaurant</p>
+      <div class="container text-center">
+    <div ng-repeat="location in randomizedArray">
+      <ul class="list-unstyled">
+        <li>{{location['restaurant_name']}}</li>
+        <li>{{location['address']}}</li>
+        <li>{{location['phone']}}</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="jumbotron container-fluid">
+  <div class="container display-2 text-center">
+<div ng-repeat="location in randomizedArray">
+  <ul class="list-unstyled">
+    <li>{{location['restaurant_name']}}</li>
+    <li>{{location['address']}}</li>
+    <li>{{location['phone']}}</li>
+  </ul>
+</div>
+</div>
+</div> -->
+
+<button type="button" class="btn btn-primary btn-lg btn-block" ng-click="randomize()">Randomize!</button>

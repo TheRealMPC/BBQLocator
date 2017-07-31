@@ -1,0 +1,24 @@
+<div class="container" style="background:white; opacity:0.8">
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Restaurant Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody ng-repeat="location in locations | filter:query | orderBy:orderProp | limitTo:quantity">
+      <tr>
+        <td>{{location.restaurant_name}}</td>
+        <td>{{location.address}}</td>
+        <td>{{location.phone}}</td>
+      </tr>
+      <p>
+        Use the filter to find details on a specific location
+      </p>
+      <div>
+        Filter: <input type="text" ng-model='query'/>
+      </div>
+    </tbody>
+  </table>
+</div>

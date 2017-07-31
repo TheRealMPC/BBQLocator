@@ -1,0 +1,24 @@
+body{
+  background-image: url('/img/back.jpg');
+}
+
+/*#map {
+  height: 80%;
+  width: 75%;
+  opacity: 0.8;
+}*/
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+   opacity: 0.5;
+}
+
+#about{
+  background: white;
+  opacity: 0.5;
+}
