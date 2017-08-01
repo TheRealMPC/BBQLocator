@@ -3,27 +3,27 @@ angular.module('bbq', ['ui.router'])
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: '../routes/home.html',
+        templateUrl: './routes/home.html',
         controller: 'homeCtrl'
       })
       .state('locations', {
         url: '/locations',
-        templateUrl: '../routes/locations.html',
+        templateUrl: './routes/locations.html',
         controller: 'locationsCtrl',
       })
       .state('map', {
         url: '/map',
-        templateUrl: '../routes/map.html',
+        templateUrl: './routes/map.html',
         controller: 'mapCtrl',
       })
       .state('restaurants', {
         url: '/restaurants',
-        templateUrl: '../routes/restaurants.html',
+        templateUrl: './routes/restaurants.html',
         controller: 'restaurantsCtrl'
       })
       .state('about', {
         url: '/about',
-        templateUrl: '../routes/about.html',
+        templateUrl: './routes/about.html',
       })
 
       $urlRouterProvider
