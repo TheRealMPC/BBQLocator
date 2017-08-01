@@ -1,5 +1,5 @@
 angular.module('bbq').controller('restaurantsCtrl', function($scope, $http, mainService) {
-  $http.get('data.JSON').then(function(locations) {
+  $http.get('./data.JSON').then(function(locations) {
     $scope.locations = locations.data;
     $scope.randomize = function() {
     var randomized = Math.ceil(Math.random()*(60-1)+1);
