@@ -11,6 +11,11 @@ angular.module('bbq', ['ui.router'])
         templateUrl: '../routes/locations.html',
         controller: 'locationsCtrl',
       })
+      .state('map', {
+        url: '/map',
+        templateUrl: '../routes/map.html',
+        controller: 'mapCtrl',
+      })
       .state('restaurants', {
         url: '/restaurants',
         templateUrl: '../routes/restaurants.html',
